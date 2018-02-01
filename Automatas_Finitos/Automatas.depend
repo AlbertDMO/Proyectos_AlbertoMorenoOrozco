@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1436537743 source:/home/albertd/C++/Prac1/Automatas/main.cpp
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	"AutomataFinito.h"
+
+1436537479 source:/home/albertd/C++/Prac1/Automatas/src/AutomataFinito.cpp
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	"AutomataFinito.h"
+
+1436537329 /home/albertd/C++/Prac1/Automatas/include/AutomataFinito.h
+
