@@ -1,0 +1,102 @@
+body{
+    background: url(../img/back.jpg);
+}
+div {
+    border: solid 1px #888888;
+}
+#Contenedor_Menu {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-style: hidden;
+    z-index: 1;
+}
+#Contenedor_Principal {
+    position: relative;
+    background-color: #fcfcfc;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60px;
+    margin-bottom: 100px;
+}
+#Titulo {
+    height: 35px;
+    text-align: center;
+    position: relative;
+    font-family: fantasy;
+    color: #881099;
+}
+#Titulo h1 {
+    position: relative;
+    bottom: 20px;
+    font-size: 28px;
+}
+#Menu {
+    height: 23px;
+    position: relative;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+    color: #800099;
+}
+
+.opcMenu {
+    position: absolute;
+    height: 21px;
+    width: 25%;
+    text-align: center;
+}
+.opcMenu h3 {
+    position: relative;
+    bottom: 19px;
+}
+#opc1 {
+    left: 0%;
+}
+#opc2 {
+    left: 25%;
+}
+#opc3 {
+    left: 50%;
+}
+#opc4 {
+    left: 75%;
+}
+#Contenido {
+    position: relative;
+    width: 1198px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+#Pie_Pagina {
+    position: relative;
+    width: 1200px;
+    height: 180px;
+    border-style: hidden;
+}
+.opcPie {
+    position: absolute;
+    height: 100%;
+    width: 33.3%;
+    text-align: center;
+}
+#Validacion {
+    left: 0%;
+}
+#Mapa_Curricular {
+    left: 33.3%;
+}
+#Contacto {
+    left: 66.6%;
+}
+#Mapa_Curricular h2 {
+    position: relative;
+    bottom: 10px;
+}
+#Contacto h2 {
+    position: relative;
+    bottom: 10px;
+}
+

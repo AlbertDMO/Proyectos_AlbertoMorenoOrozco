@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="author" content="Alberto D. Moreno Orozco">
+		<meta name="generator" content="Aptana Studio 3">
+		<meta name="date" content="22 de Septiembre de 2014">
+		
+		<link type="text/css" rel="stylesheet" href="./estilo/estilo_plantilla.css">
+		<link type="text/css" rel="stylesheet" href="./estilo/estilo_contenido.css">
+		
+		<title>Selectores CSS</title>
+	</head>
+	<body>
+		<div id="Contenedor_Menu">
+			<div id="Titulo">
+				<h1>
+					Tecnolog&iacute;as Web
+				</h1>
+			</div>
+			<div id="Menu">
+				<div id="opc1" class="opcMenu">
+					<h3>
+						Inicio
+					</h3>
+				</div>
+				<div id="opc2" class="opcMenu">
+					<h3>
+						Parcial 1
+					</h3>
+				</div>
+				<div id="opc3" class="opcMenu">
+					<h3>
+						Parcial 2
+					</h3>
+				</div>
+				<div id="opc4" class="opcMenu">
+					<h3>
+						Parcial 3
+					</h3>
+				</div>
+			</div>
+		</div>
+			
+		<div id="Contenedor_Principal">
+			<div id="Contenido">
+				<div class="titulo_tipo" id="selector_etiqueta">
+					<h4>
+						Selector de tipo o etiqueta
+					</h4>
+				
+				</div>
+				<div class="descripcion">
+					<p>
+						Selecciona todos los elementos de la p&aacute;gina cuya etiqueta HTML coincide con el valor del selector.<br>Para utilizar este selector, solamente es necesario indicar el nombre de una etiqueta HTML (sin los caracteres &lt; y &gt;) correspondiente a los elementos que se quieren seleccionar.
+					</p>
+				</div>
+				<div class="ejemplo" id="ejem1">
+					<p>
+						<span>Ejemplo:</span> <br><br>
+						&lt;h1&gt;Hola Mundo&lt;h1/&gt;<br><br>
+						h1{<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;color: #ff0000;<br>
+						}
+					</p>
+					<h1>Hola Mundo</h1>
+				</div>
+				
+				<div class="titulo_tipo" id="selector_multiple">
+					<h4>
+						Selector M&uacute;ltiple
+					</h4>
+				
+				</div>
+				<div class="descripcion">
+					<p>
+						En este caso, CSS permite agrupar todas las reglas individuales en una sola regla con un selector m&uacute;ltiple. Para ello, se incluyen todos los selectores separados por una coma (,) y el resultado es que las etiquetas escogidas comparten los mismos estilos.
+					</p>
+				</div>
+				<div class="ejemplo" id="ejem2">
+					<p>
+						<span>Ejemplo:</span><br><br>
+						&lt;h1&gt;Texto dentro de h1&lt;h1/&gt;<br>
+						&lt;h2&gt;Texto dentro de h2&lt;h2/&gt;<br>
+						&lt;h3&gt;Texto dentro de h3&lt;h3/&gt;<br><br>
+						h1, h2, h3 {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;color: #8A8E27;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;font-weight: normal;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;<br>
+						}
+					</p>
+					<h1>Texto dentro de h1</h1>
+					<h2>Texto dentro de h2</h2>
+					<h3>Texto dentro de h3</h3>
+				</div>
+				
+				<div class="titulo_tipo" id="selector_id">
+					<h4>
+						Selector por ID
+					</h4>
+				
+				</div>
+				<div class="descripcion">
+					<p>
+						El selector de ID permite seleccionar un elemento de la p&aacute;gina a trav&eacute;s del valor de su atributo id. Este tipo de selectores s&oacute;lo seleccionan un elemento de la p&aacute;gina porque el valor del atributo id no se puede repetir en dos elementos diferentes de una misma p&aacute;gina.
+					</p>
+				</div>
+				<div class="ejemplo" id="ejem3">
+					<p>
+						<span>Ejemplo:</span><br><br>
+						&lt;p&gt;Primer P&aacute;rrafo&lt;p/&gt;<br>
+						&lt;p id=&quot;sel_id&quot;&gt;Segundo P&aacute;rrafo&lt;p/&gt;<br>
+						&lt;p&gt;Tercer P&aacute;rrafo&lt;p/&gt;<br><br>
+						#sel_id {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;color: #15d54f<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;font-style: oblique;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;text-align: right;<br>
+						}
+					</p>
+					<p>Primer P&aacute;rrafo</p>
+					<p id="sel_id">Segundo P&aacute;rrafo</p>
+					<p>Tercer P&aacute;rrafo</p>
+				</div>
+				
+				<div class="titulo_tipo" id="selector_clase">
+					<h4>
+						Selector de Clase
+					</h4>
+				
+				</div>
+				<div class="descripcion">
+					<p>
+						Este tipo de selectores se llaman selectores de clase y son los m&aacute;s utilizados junto con los selectores de ID. La principal caracter&iacute;stica de este selector es que en una misma p&aacute;gina HTML varios elementos diferentes pueden utilizar el mismo valor en el atributo class.<br>
+						Los selectores de clase son imprescindibles para dise&ntilde;ar p&aacute;ginas web complejas, ya que permiten disponer de una precisi&oacute;n total al seleccionar los elementos. Adem&aacute;s, estos selectores permiten reutilizar los mismos estilos para varios elementos diferentes.
+					</p>
+				</div>
+				<div class="ejemplo" id="ejem4">
+					<p>
+						<span>Ejemplo:</span><br><br>
+						&lt;p class=&quot;clase&quot; &gt;Este p&aacute;rrafo es parte de una clase y se le aplicar&aacute;n los efectos de la clase&lt;/p&gt;<br>
+						&lt;p&gt;Este p&aacute;rrafo no contiene una clase y tendr&aacute; el estilo gen&eacute;rico de los  p&aacute;rrafos&lt;/p&gt;<br>
+						&lt;p class=&quot;clase&quot; &gt;Este p&aacute;rrafo tambi&eacute;n es parte de la clase que el primero&lt;/p&gt;<br><br>
+						.clase {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.5em;<br>
+  							&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid #98be10;<br>
+  							&nbsp;&nbsp;&nbsp;&nbsp;background: #f6feda;<br>
+						}
+					</p>
+					<p class="clase">Este p&aacute;rrafo es parte de una clase y se le aplicar&aacute;n los efectos de la clase</p>
+					<p>Este p&aacute;rrafo no contiene una clase y tendr&aacute; el estilo gen&eacute;rico de los  p&aacute;arrafos</p>
+					<p class="clase">Este p&aacute;rrafo tambi&eacute;n es parte de la clase que el primero</p>
+				</div>
+				
+				<div class="titulo_tipo" id="selector_desc">
+					<h4>
+						Selector descendente
+					</h4>
+				
+				</div>
+				<div class="descripcion">
+					<p>
+						Este tipo de selectores se utiliza para seleccionar un elemento que es hijo directo de otro elemento, es decir, se encuentra anidado dentro de otro selector
+					</p>
+				</div>
+				<div class="ejemplo" id="ejem5">
+					<p>
+						<span>Ejemplo:</span><br><br>
+						&lt;div&gt;&lt;h1&gt;T&iacute;tulo dentro de div (sin cambios)&lt;/h1&gt;&lt;/div&gt;<br>
+						&lt;div&gt;&lt;p&gt;P&aacute;rrafo dentro de un div (con estilo)&lt;/p&gt;&lt;/div&gt;<br><br>
+						div p {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;padding: 5px;<br>
+  							&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #00be10;<br>
+  							&nbsp;&nbsp;&nbsp;&nbsp;background: #f48790;<br>
+						}
+					</p>
+					<p>
+						<h1>
+							T&iacute;tulo dentro de div (sin cambios)
+						</h1>
+						<span id="sub_ejem5">
+							P&aacute;rrafo dentro de un div (con estilo)
+						</span>
+					</p>
+				</div>
+					
+			</div>
+			
+			<div id="Pie_Pagina">
+				<div id="Validacion" class="opcPie">
+					<p>
+						<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  					</p>
+				</div>
+				<div id="Mapa_Curricular" class="opcPie">
+					<h4>Mapa del sitio</h4>
+					<ul>
+						<li><a href="#selector_etiqueta">Selector de Etiqueta</a></li>
+						<li><a href="#selector_multiple">Selector de M&uacute;ltiple</a></li>
+						<li><a href="#selector_id">Selector por ID</a></li>
+						<li><a href="#selector_clase">Selector de Clase</a></li>
+						<li><a href="#selector_desc">Selector por Descencia</a></li>
+					</ul>
+				</div>
+				<div id="Contacto" class="opcPie">
+					<h3>
+						Contacto<br>Alberto D. Moreno Orozco<br>...
+					</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

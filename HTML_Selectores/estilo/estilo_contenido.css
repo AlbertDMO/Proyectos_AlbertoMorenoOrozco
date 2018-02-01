@@ -1,0 +1,43 @@
+.titulo_tipo, .descripcion, .ejemplo{
+    border-style: hidden;
+    padding: 0px 10px 0px 10px;   
+}
+.titulo_tipo{
+    border-top-style: dashed;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #800099;
+}
+.ejemplo span{
+    font-family: "Arial Black";
+    font-size: 15px;
+    color: #000088;
+}
+#ejem1 h1{
+    font-size: 22px;
+    color: #ff0000;   
+}
+#ejem2 h1, #ejem2 h2, #ejem2 h3{
+    color: #8A8E27;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sel_id{
+    color: #15d54f;
+    font-style: oblique;
+    text-align: right;
+}
+.clase{
+    padding: 0.5em;
+    border: 1px solid #98be10;
+    background: #f6feda;
+}
+#ejem5 #sub_ejem5{
+    padding: 5px;
+    border: 2px solid #00be10;
+    background: #f48790;
+}
+#Mapa_Curricular ul{
+    text-align: justify;
+}
