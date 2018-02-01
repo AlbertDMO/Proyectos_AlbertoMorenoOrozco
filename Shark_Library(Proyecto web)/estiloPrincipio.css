@@ -1,0 +1,170 @@
+#ContenedorGeneral{
+	width:90%;
+	height:600px;
+	margin:30px 50px;
+	position:relative;
+	background-color: black;
+}
+
+.contenedorOpciones{
+	width:100%;
+	height: 50%;
+	background-color:;
+}
+
+#Opciones1{
+	width: 540px;
+	height:250px;
+	margin-left:10px;
+	margin-top:25px;
+	background-image:url("./Imagenes/cuadrante1.png");
+	background-size:cover;
+	border-style:outset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones1:hover{
+	width: 540px;
+	height:250px;
+	margin-left:10px;
+	margin-top:25px;
+	background-image:url("./Imagenes/cuadrante1.png");
+	background-size:cover;
+	border-style:inset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones2{
+	width: 540px;
+	height:250px;
+	margin-left:25px;
+	background-color:green;
+	background-image:url("./Imagenes/cuadrante2.png");
+	background-size:cover;
+	border-style:outset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones2:hover{
+	width: 540px;
+	height:250px;
+	margin-left:25px;
+	background-color:green;
+	background-image:url("./Imagenes/cuadrante2.png");
+	background-size:cover;
+	border-style:inset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones4{
+	width: 540px;
+	height:250px;
+	margin-left:10px;
+	margin-top:10px;
+	background-image:url("./Imagenes/cuadrante4.png");
+	background-size:cover;
+	border-style:outset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones4:hover{
+	width: 540px;
+	height:250px;
+	margin-left:10px;
+	margin-top:10px;
+	background-image:url("./Imagenes/cuadrante4.png");
+	background-size:cover;
+	border-style:inset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones3{
+	width: 540px;
+	height:250px;
+	margin-left:25px;
+	background-image:url("./Imagenes/cuadrante3.png");
+	background-size:cover;
+	border-style:outset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Opciones3:hover{
+	width: 540px;
+	height:250px;
+	margin-left:25px;
+	background-image:url("./Imagenes/cuadrante3.png");
+	background-size:cover;
+	border-style:inset;
+	border-width:3px;
+	border-color:#2989D8;
+	display: inline-block;
+}
+
+#Logo{
+	width: 550px;
+	height:324px;
+	background-image:url("./Imagenes/logo.png");
+	background-size:cover;
+	bottom:480px;
+	left:305px;
+	position:relative;
+}
+
+#textIniSesion{
+	color:white;
+	font-weight:bold;
+	margin-right:10px;
+	text-align: right;
+}
+
+#textRegistro{
+	color:white;
+	font-weight:bold;
+}
+
+#divQueEs{
+	top:190px;
+	position:relative;
+}
+
+#textQueEs{
+	color:white;
+	font-weight:bold;
+}
+
+#divReglas{
+	top:190px;
+	position:relative;
+}
+
+#textReglas{
+	color:white;
+	font-weight:bold;
+	margin-right:10px;
+	text-align: right;
+}
+
+body{
+	background: #2989d8; /* Old browsers */
+	background: -moz-linear-gradient(top, #2989d8 56%, #7db9e8 77%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(56%,#2989d8), color-stop(77%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #2989d8 56%,#7db9e8 77%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #2989d8 56%,#7db9e8 77%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #2989d8 56%,#7db9e8 77%); /* IE10+ */
+	background: linear-gradient(to bottom, #2989d8 56%,#7db9e8 77%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
