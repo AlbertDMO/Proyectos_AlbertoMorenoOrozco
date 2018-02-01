@@ -1,0 +1,40 @@
+# Project: Servidor
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 12/05/14 15:31
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/servidor.o
+LINKOBJ   = "Objects/MingW/servidor.o"
+LIBS      = -L"E:/Programas/Dev-Cpp/lib/wx/gcc_lib" -L"E:/Programas/Dev-Cpp/lib" -L"E:/Programas/Dev-Cpp/MinGW32/lib" -lwsock32  
+INCS      = -I"E:/Programas/Dev-Cpp/MinGW32/include"
+CXXINCS   = -I"E:/Programas/Dev-Cpp/MinGW32/include" -I"E:/Programas/Dev-Cpp/" -I"E:/Programas/Dev-Cpp/include/common"
+RCINCS    = --include-dir "E:/PROGRA~1/Dev-Cpp/include/common"
+BIN       = Output/MingW/Servidor.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/servidor.o: $(GLOBALDEPS) servidor.c servidor.h
+	$(CC) -c servidor.c -o Objects/MingW/servidor.o $(CFLAGS)
