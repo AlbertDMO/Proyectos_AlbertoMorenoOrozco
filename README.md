@@ -1,2 +1,3 @@
 # Proyectos_AlbertoMorenoOrozco
-Proyectos de programación que he realizado
+
+Algunos proyectos de programación que he realizado en varios lenguajes.
