@@ -1,0 +1,25 @@
+///********************************************////////////
+
+README
+
+Pasos para compilación:
+
+en una terminal:
+
+cd ~/Src/
+
+gcc *.h *.c -o letras
+
+Para la ejecución del programa:
+
+en una terminal:
+
+./letras
+
+Seguir la instrucciones:
+ingresar el numero de letras a analizar
+ingresar la letra que se quiera (E, F, H)
+ingresar la direccion de la letra ideal ~/Src/Ideales/E.bmp por ejemplo
+Posteriormente da el vector de representacion
+Ingresar la direccion de la letra que se va a comparar ~/Proyecto/Src/Letras/letraE.bmp
+fin de programa
